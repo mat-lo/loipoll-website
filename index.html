@@ -3,14 +3,41 @@
     <meta charset='utf-8'>
     <head>
         <title>LOIPOLL</title>
+        <link href='//fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
         <style type="text/css">
-            img {
-                width: 2em 20%;
-                margin: 0 auto;
+            #all {
+                display: block;
+                margin: 5em auto;
             }
+            
+            img {
+                width: 100%;
+            }
+            
+            h2 {
+                font-family: 'Varela Round';
+                text-align:center;
+            }
+            
+            /* ALL */
+            @media only screen and (min-width : 381px) {
+                #all {
+                    width: 20%;
+                }
+            } 
+            
+            /* Smartphones (portrait) ----------- */
+            @media only screen and (max-width : 380px) {
+                #all {
+                    width: 50%; 
+                }
+            } 
         </style>
     </head>
     <body>
-        <img src="logo.png"></img>
+        <div id="all">
+            <img src="logo.png"></img>
+            <h2>IN ARRIVO</h2>
+        </div>
     </body>
 </html>
